@@ -1,149 +1,135 @@
-/* styles.css */
-
-/* Reset */
-body, h1, p, ul, li, input, textarea, button {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
     color: #333;
-    line-height: 1.6;
 }
 
+/* Header */
 header {
     background-color: #bd1522;
-    padding: 10px 20px;
-    color: white;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
 }
 
-.navbar {
+header img {
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 5px 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+/* Navbar */
+nav {
+    background-color: #900d16;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.logo img {
-    height: 50px;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-
-.nav-links li a {
+nav a {
+    color: #fff;
     text-decoration: none;
-    color: white;
-    font-size: 18px;
-    transition: color 0.3s;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-.nav-links li a.active, 
-.nav-links li a:hover {
-    color: #f4f4f4;
-    text-decoration: underline;
-}
-
-.menu-toggle {
-    display: none;
-    background: none;
-    color: white;
-    font-size: 30px;
-    border: none;
-    cursor: pointer;
-}
-
-/* Formulario de contacto */
-.contact-form {
-    background: white;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 600px;
+nav a.active {
+    background-color: #bd1522;
     border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #bd1522;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+/* Section */
+section {
+    text-align: center;
+    padding: 20px 15px;
+    margin: 20px auto;
+}
+
+section h2 {
+    color: #bd1522;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form h1 {
-    margin-bottom: 15px;
-    font-size: 24px;
-    color: #bd1522;
-    text-align: center;
-}
-
-.contact-form p {
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 16px;
-    color: #555;
-}
-
-.contact-form label {
+form label {
     font-weight: bold;
-    margin-top: 10px;
+    margin-bottom: 5px;
     display: block;
 }
 
-.contact-form input, .contact-form textarea {
+form input,
+form textarea,
+form button {
     width: 100%;
+    margin-bottom: 15px;
     padding: 10px;
-    margin: 5px 0 15px 0;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 1em;
 }
 
-.contact-form button {
+form button {
     background-color: #bd1522;
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
     cursor: pointer;
-    display: block;
-    width: 100%;
+    transition: background-color 0.3s;
 }
 
-.contact-form button:hover {
-    background-color: #a0101c;
+form button:hover {
+    background-color: #900d16;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #bd1522;
-    color: white;
-    margin-top: 20px;
+    background-color: #900d16;
+    color: #fff;
+    padding: 15px;
 }
-
-/* Responsividad */
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: #bd1522;
-        width: 100%;
-        z-index: 1000;
+    body {
+      font-size: 14px;
     }
-
-    .nav-links.active {
-        display: flex;
+    nav {
+      flex-direction: column;
     }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-links li {
-        text-align: center;
-        padding: 10px 0;
-    }
-}
+  }
+  
