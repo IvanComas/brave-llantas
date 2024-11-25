@@ -3,31 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio | Brave Llantas SAS</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <title>Contáctanos - Brave Llantas SAS</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Encabezado con navegación -->
     <header>
-        <img src="img/logo-brave.png" alt="Logo Brave Llantas SAS">
-        <h1>Brave Llantas SAS</h1>
-        <p>Tu aliado en llantas para camión</p>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Brave Llantas SAS">
+            </div>
+            <button class="menu-toggle" id="menu-toggle">
+                ☰
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quienes Somos</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contactanos.html" class="active">Contáctanos</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="quienes-somos.html">Quiénes Somos</a>
-        <a href="productos.html">Productos</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="contactanos.html">Contáctanos</a>
-    </nav>
-    <section>
-        <h2>Bienvenidos a Brave Llantas SAS</h2>
-        <p>Especialistas en llantas para camión con la mejor calidad y precio.</p>
-        <img src="img/camion1.jpg" alt="Camión con llantas nuevas" class="camion">
-        <p>Descubre nuestra amplia gama de productos y servicios diseñados para mantener tu flota en las mejores condiciones.</p>
-    </section>
+
+    <!-- Contenido principal -->
+    <main>
+        <section class="contact-form">
+            <h1>Contáctanos</h1>
+            <p>Si tienes alguna consulta, completa el siguiente formulario. Estaremos encantados de atenderte.</p>
+            <form action="#" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="Escribe tu correo electrónico" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+
+                <button type="submit" class="btn-submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
     <footer>
         <p>© 2024 Brave Llantas SAS. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
