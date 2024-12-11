@@ -9,26 +9,120 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- ENCABEZADO -->
     <header>
-        <img src="img/logo-brave.png" alt="Logo Brave Llantas SAS">
-        <h1>Brave Llantas SAS</h1>
-        <p>Tu aliado en llantas para camión</p>
+        <img id="imagenFondo" src="./img/FONDO IMG.jpg" alt="fondo_img">
+        <nav class="navbar">
+            <div class="logobar">
+                <a href="./index.html"><img src="./img/image.png" alt="LogoBlack"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contactanos.html">Contáctanos</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="quienes-somos.html">Quiénes Somos</a>
-        <a href="productos.html">Productos</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="contactanos.html">Contáctanos</a>
-    </nav>
-    <section>
-        <h2>Bienvenidos a Brave Llantas SAS</h2>
-        <p>Especialistas en llantas para camión con la mejor calidad y precio.</p>
-        <img src="img/camion1.jpg" alt="Camión con llantas nuevas" class="camion">
-        <p>Descubre nuestra amplia gama de productos y servicios diseñados para mantener tu flota en las mejores condiciones.</p>
+
+    <!-- SESIONES -->
+    <section class="empresa-info">
+        
+        <!-- Imagen logo-principal -->
+        <div class="logo-container">
+            <img src="./img/Logo-2.jpg" alt="Logo-brave" class="logo-principal">
+        </div>
+    
+        <!-- Párrafo 1 -->
+        <div class="container">
+            <div class="info-text-left">
+                <h2>Compromiso y Calidad en Llantas</h2>
+                <p><strong>Brave Llantas y Soluciones SAS</strong> se ha consolidado como líder en la industria, proporcionando llantas de alto desempeño que garantizan eficiencia y seguridad en el transporte. Nuestro objetivo es ofrecer soluciones integrales que optimicen el costo operativo y contribuyan al crecimiento de su negocio. Además, contamos con un equipo de expertos altamente capacitados que brindan asesoría personalizada, asegurando que cada cliente encuentre el producto ideal para sus necesidades. Nos destacamos por combinar innovación tecnológica con un compromiso inquebrantable hacia la satisfacción y confianza de quienes confían en nosotros.</p>
+            </div>
+            <div class="info-image-right">
+                <img src="./img/Llanta-section.jpeg" alt="Llanta-sect" class="image-cont">
+            </div>
+        </div>
+        <br>
+
+        <!-- Párrafo 2 -->
+        <div class="container">
+            <div class="info-image-left">
+                <img src="./img/Hanksugi Japan llanta + camion.jpg" alt="Hanksugi-image" class="image-cont">
+            </div>
+            <div class="info-text-right">
+                <h2>Hanksugi: Tecnología Japonesa</h2>
+                <p>Hanksugi, nuestra marca aliada, combina la precisión de la tecnología japonesa con más de dos décadas de experiencia en diseño de llantas, garantizando productos que maximizan la eficiencia en el consumo de combustible y extienden significativamente su vida útil.</p>
+                <ul>
+                    <li><strong>Durabilidad superior:</strong> Hasta 3 reencauches por neumático.</li>
+                    <li><strong>Garantía de 7 años:</strong> Respaldo completo en calidad.</li>
+                    <li><strong>Reducción de costos:</strong> Mejor costo por kilómetro en el mercado.</li>
+                </ul>
+            </div>      
+        </div>
+
+        <!-- LOGOS -->
+        <div class="extra-images">
+            <img src="./img/Logo-2.jpg" alt="brave_log2" class="brave_log">
+            <img src="./img/Logo Hanksuki.png" alt="logo-Hanksugi" class="hank_log">
+        </div>
     </section>
+     
+    <!-- wapp Flotante -->
+    <a href="https://api.whatsapp.com/send?phone=573117241467" target="_blank"><img src="./img/Logo-wapp.png" alt="Logo-wapp" id="flotante"></a>
+   
+    <!-- Pié de Página   -->
     <footer>
-        <p>© 2024 Brave Llantas SAS. Todos los derechos reservados.</p>
+        <div class="grid-container">
+            <!-- Logo -->
+            <div class="item">
+                <img id="Logopp" src="./img/Logo-2.jpg" alt="Logo-pp"> 
+            </div>
+            <!-- Visitanos -->
+            <div class="item">
+                <div id="ppagina">
+                    <h3>&nbsp;Visítanos:</h3>
+                    <img src="./img/globo.png" alt="paginaweb">
+                    &nbsp;&nbsp;&nbsp;
+                    <img src="./img/facebook.png" alt="facebook">
+                    &nbsp;&nbsp;&nbsp;
+                    <img src="./img/instagram.png" alt="instagram">
+                    <br>
+                    <br>
+                    <img src="./img/linkedin.png" alt="linkedin">
+                    &nbsp;&nbsp;&nbsp;
+                    <img src="./img/youtube.png" alt="youtube">
+                    &nbsp;&nbsp;&nbsp;
+                    <img src="./img/whatsapp.png" alt="Wappvisit">
+                </div>
+            </div>
+            <!-- Sitio -->
+            <div class="item">              
+                <div id="sitiopp">
+                    <h3>Sitio:</h3>
+                    <ul>
+                        <a href="index.html">Inicio</a>
+                        <br>
+                        <br>
+                        <a href="nosotros.html">Nosotros</a>
+                        <br>
+                        <br>
+                        <a href="productos.html">Productos</a>
+                        <br>
+                        <br>
+                        <a href="servicios.html">Servicios</a>
+                        <br>
+                        <br>
+                        <a href="contactanos.html">Contáctanos</a>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+        
+        <!-- Pagina Final -->
+        <p class="final-page">&copy; 2024 Brave Llantas SAS. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>

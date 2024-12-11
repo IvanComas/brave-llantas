@@ -1,83 +1,346 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+/* ESTILOS GENERALES */
+body, html {
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
     color: #333;
 }
 
-/* Header */
-header {
-    background-color: #bd1522;
-    color: #fff;
-    text-align: center;
-    padding: 20px 10px;
+body {
+    margin: 0; 
+    padding-top: 60px;
 }
 
-header img {
-    height: 80px;
-    margin-bottom: 10px;
+/* WAPP FLOTANTE */
+#flotante {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;
+    width: 60px; 
+    height: 60px; 
+    display: flex; 
+    align-items: center; 
+    cursor: pointer; 
+    z-index: 1000; 
+    transition: transform 0.3s ease;
 }
 
-header h1 {
-    font-size: 2.5em;
-    margin: 5px 0;
+#flotante:hover{
+    transform: scale(1.4);
 }
 
-header p {
-    font-size: 1.2em;
-    margin: 0;
+/* Header Encabezado */
+#imagenFondo{
+    align-items: center;
+    width: 100%;
+    height: 550px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-/* Navbar */
+/* Barra de navegación */
 nav {
-    background-color: #900d16;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 60px; 
+    background-color: #900d16; 
+    color: white; 
+    z-index: 1000;
+    display: flex; 
+    align-items: center; 
+    padding: 0 20px;
+}
+
+.logobar img{
+    width: 60px;
+    margin-left: 40px;
+}
+
+.navbar {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 20px; 
+    background-color: #900d16; 
+    color: white; 
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white; 
+    margin: 0 10px;
+}
+
+.navbar a:hover {
+    color: #c4bcbc;
+}
+
+.nav-links {  
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 30px;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: #bd1522;
+    border-radius: 4px;
+}
+
+
+/* PÁGINA INDEX (Contenido) */
+
+.empresa-info {
+    width: 80%;
+    margin: 5px auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: none;
+    margin-top: none;
+}
+
+.logo-principal {
+    width: 500px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1px;
+}
+
+/* Párrafo 1 */
+.info-text-left {
+    flex: 1;
+    text-align: justify;
+    font-size: 18px;
+    padding: 20px;
+    margin-left: 7%;
+}
+
+.info-image-right {
+    flex: 1;
+    padding: 20px;
+    text-align: right;
+    margin-right: 7%;
+    
+}
+
+/* Párrafo 2 */
+
+.info-text-right {
+    flex: 1;
+    text-align: justify;
+    font-size: 18px;
+    padding: 20px;
+    margin-right: 7%;
+}
+
+.info-image-left {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    margin-left: 7%;
+}
+
+.image-cont {
+    width: 340px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.extra-images {
     display: flex;
     justify-content: center;
-    padding: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    gap: 20px;
+    margin-top: 20px;
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 5px;
-    font-size: 1.1em;
-    transition: background-color 0.3s, transform 0.2s;
+.brave_log {
+    width: 400px;
+
 }
 
-nav a.active {
-    background-color: #bd1522;
-    border-radius: 5px;
+.hank_log {
+    width: 350px;
 }
 
-nav a:hover {
-    background-color: #bd1522;
-    border-radius: 5px;
-    transform: scale(1.1);
-}
-
-/* Section */
-section {
-    text-align: center;
-    padding: 20px 15px;
+/* PAGINA NOSOTROS */
+#nosotros {
+    width: 75%;
     margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+    text-align: center;
 }
 
-section h2 {
-    color: #bd1522;
-    font-size: 2em;
+.empresa-imagen-nos img {
+    width: 350px;
+    height: auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.empresa-info-nos {
+    margin-left: 20px;
+    width: 74%;
+    text-align: justify;
+    margin-left: 14%;
+}
+
+.empresa-info-nos h2 {
+    font-size: 32px;
+    color: #333;
     margin-bottom: 20px;
+    text-align: center;
 }
 
-section p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+.empresa-info-nos h3 {
+    font-size: 24px;
+    color: #555;
+    margin-top: 20px;
+    text-align: center;
 }
 
-/* Form */
+.empresa-info-nos p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.empresa-info-nos p:last-of-type {
+    margin-bottom: 0;
+}
+
+/* PAGINA PRODUCTOS */
+
+.container-producto {
+    padding: 2rem;
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 60%;
+ 
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 1rem;
+    text-align: center;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.product-price {
+    color: #007BFF;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+
+/*  PAGINA SERVICIOS  */
+
+.servicios-gen {
+    width: 80%;
+    margin: 5px auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+}
+
+
+.servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1px;
+}
+
+.info-text-servicios {
+    flex: 1;
+    text-align: justify;
+    font-size: 18px;
+    padding: 20px;
+    margin-left: 10%;
+}
+
+.info-image-servicios {
+    flex: 1;
+    padding: 20px;
+    text-align: right;
+    margin-right: 10%;
+    
+}
+
+.image-serv {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nuestros-servicios {
+    list-style-type: square;
+    font-size: 95%;
+}
+
+/* PAGINA FORMULARIOS*/
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -117,19 +380,65 @@ form button:hover {
     background-color: #900d16;
 }
 
-/* Footer */
+/* Footer Pie de página */
 footer {
     text-align: center;
     background-color: #900d16;
     color: #fff;
-    padding: 15px;
+    padding-top: 15px;
 }
-@media (max-width: 768px) {
-    body {
-      font-size: 14px;
+
+footer img{
+    width: 30px;
+    cursor: pointer;
+    z-index: 1000; 
+    transition: transform 0.3s ease;
+    margin: 10px;
+}
+
+footer #ppagina img:hover{
+    transform: scale(1.3);
+}
+
+
+#ppagina{
+    text-align: left;
+    margin-left: 20%;
+    font-family: sans-serif;
     }
-    nav {
-      flex-direction: column;
+
+#Logopp {
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #bd1522;;
+    float: left;
+    margin-left: 10%;
+    margin-top: 8%;
     }
-  }
-  
+
+#sitiopp, a{
+    color: #fff;
+    text-align: left;
+    font-size: 100%;
+    text-decoration: none;
+    padding: 0px 0px;
+    margin: 0 5px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+}
+
+iframe{
+    margin-top: 12px;
+    border: solid 2px black;
+    margin: auto;
+    padding: 0;
+    box-shadow: 0 0 4px black;
+}
+
+.final-page {
+    margin: 0;
+    padding: 12px;
+    background-color: #bd1522;
+}

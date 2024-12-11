@@ -9,30 +9,131 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+    <!-- ENCABEZADO -->
+    
     <header>
-        <img src="img/logo-brave.png" alt="Logo Brave Llantas SAS">
-        <h1>Brave Llantas SAS</h1>
-        <p>Servicios</p>
+        <nav class="navbar">
+            <div class="logobar">
+                <a href="./index.html"><img src="./img/image.png" alt="LogoBlack"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contactanos.html">Contáctanos</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="quienes-somos.html">Quiénes Somos</a>
-        <a href="productos.html">Productos</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="contactanos.html">Contáctanos</a>
-    </nav>
-    <section>
-        <h2>Nuestros Servicios</h2>
-        <ul style="text-align: left; max-width: 800px; margin: auto;">
-            <li><strong>Venta de llantas para camión:</strong> Amplia gama de marcas y modelos.</li>
-            <li><strong>Instalación de llantas:</strong> Servicio profesional en nuestras instalaciones.</li>
-            <li><strong>Balanceo y alineación:</strong> Optimización para prolongar la vida útil de las llantas.</li>
-            <li><strong>Asesoría personalizada:</strong> Ayuda para elegir las llantas ideales según tus necesidades.</li>
-        </ul>
-        <img src="img/camion3.jpg" alt="Servicio de instalación de llantas" class="camion">
+
+     <!-- SESIONES -->
+    <section class="servicios-gen">
+        
+    <!-- Imagen logo-principal -->
+        <div class="logo-container">
+            <img src="./img/Logo-2.jpg" alt="Logo-brave" class="logo-principal">
+            <h1>Nuestros servicios</h1>
+        </div>
+
+        <!-- Servicio 1 -->
+        <div class="servicios">
+            <div class="info-text-servicios">
+                <ul class="nuestros-servicios">
+                    <li>Efectuar un inventario general de las llantas, mediante una inspección física a cada uno los vehículos que conforman la flota</li>
+                    <br>
+                    <li>Informes en formatos especialmente diseñados para identificar las fallas, estado de los desgastes y demás datos de cada una de las llantas y vehículos</li>
+                    <br>
+                    <li>Chequeo físico a todas las llantas de los vehículos que conforman la flota</li>
+                    <br>
+                    <li>Control y seguimiento a cada llanta instalada</li>
+                </ul>
+            </div>
+            <div class="info-image-servicios">
+                <img src="./img/medicion-llanta.jpeg" alt="Llanta-sect" class="image-serv">
+            </div>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="servicios">
+            <div class="info-text-servicios">
+                <ul class="nuestros-servicios">
+                    <li>Inventariado y enumeración de las llantas</li>
+                    <br>
+                    <li>Alineación y dirección de ejes en sitio Alineación y dirección de ejes en sitio</li>
+                    <br>
+                    <li>Asesorar y determinar los diseños, dimensiones, presiones etc., que se deben utilizar en cada vehículo</li>
+                    <br>
+                    <li>Capacitar al personal en diferentes tareas cotidianas que permitan conservar de la mejor forma las llantas</li>
+                    <br>
+                    <li>Servicio de carro taller para el desvare y cambio llantas</li>
+                </ul>
+            </div>
+            <div class="info-image-servicios">
+                <img src="./img/revision-llanta.jpeg" alt="Llanta-sect" class="image-serv">
+            </div>
+        </div>
+
+        <!-- LOGOS -->
+        <div class="extra-images">
+            <img src="./img/Logo-2.jpg" alt="brave_log2" class="brave_log">
+            <img src="./img/Logo Hanksuki.png" alt="logo-Hanksugi" class="hank_log">
+        </div>
     </section>
+
+    <!-- wapp Flotante -->
+    <a href="https://api.whatsapp.com/send?phone=573117241467" target="_blank"><img src="./img/Logo-wapp.png" alt="Logo-wapp" id="flotante"></a>
+
+    <!-- Pié de Página   -->
     <footer>
-        <p>© 2024 Brave Llantas SAS. Todos los derechos reservados.</p>
+        <div class="grid-container">
+            <!-- Logo -->
+            <div class="item">
+                <img id="Logopp" src="./img/Logo-2.jpg" alt="Logo-pp"> 
+            </div>
+            <!-- Visitanos -->
+            <div class="item">
+                <div id="ppagina">
+                    <h3>&nbsp;Visítanos:</h3>
+                    <img src="./img/globo.png" alt="paginaweb">
+                    &nbsp;&nbsp;&nbsp;
+                    <img src="./img/facebook.png" alt="facebook">
+                    &nbsp;&nbsp;&nbsp;
+                    <img src="./img/instagram.png" alt="instagram">
+                    <br>
+                    <br>
+                    <img src="./img/linkedin.png" alt="linkedin">
+                    &nbsp;&nbsp;&nbsp;
+                    <img src="./img/youtube.png" alt="youtube">
+                    &nbsp;&nbsp;&nbsp;
+                    <img src="./img/whatsapp.png" alt="Wappvisit">
+                </div>
+            </div>
+            <!-- Sitio -->
+            <div class="item">              
+                <div id="sitiopp">
+                    <h3>Sitio:</h3>
+                    <ul>
+                        <a href="index.html">Inicio</a>
+                        <br>
+                        <br>
+                        <a href="nosotros.html">Nosotros</a>
+                        <br>
+                        <br>
+                        <a href="productos.html">Productos</a>
+                        <br>
+                        <br>
+                        <a href="servicios.html">Servicios</a>
+                        <br>
+                        <br>
+                        <a href="contactanos.html">Contáctanos</a>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    
+        <!-- Pagina Final -->
+        <p class="final-page">&copy; 2024 Brave Llantas SAS. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>

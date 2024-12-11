@@ -9,28 +9,111 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- ENCABEZADO -->
     <header>
-        <img src="img/logo-brave.png" alt="Logo Brave Llantas SAS">
-        <h1>Brave Llantas SAS</h1>
-        <p>Productos</p>
+        <nav class="navbar">
+            <div class="logobar">
+                <a href="./index.html"><img src="./img/image.png" alt="LogoBlack"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contactanos.html">Contáctanos</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="quienes-somos.html">Quiénes Somos</a>
-        <a href="productos.html">Productos</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="contactanos.html">Contáctanos</a>
-    </nav>
+    
+    <!-- PRODUCTOS -->
     <section>
-        <h2>Catálogo de Productos</h2>
-        <div class="producto">
-            <h3>Llantas Radiales 22.5</h3>
-            <img src="img/camion3.jpg" alt="Llantas radiales" class="camion">
-            <p>Precio: $1,200,000</p>
+        <div class="container-producto">
+            <div class="product-grid">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <img src="https://scontent2.llantas.mx/images/739X930/models/HN808_ECO_5afc519f29f1d.jpg" alt="Llanta 1">
+                    <div class="product-info">
+                        <h2 class="product-title">Llanta Todo Terreno</h2>
+                        <p class="product-price">COP $950.000 + IVA</p>
+                        
+                    </div>
+                </div>
+    
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_656746-MCO46480896690_062021-O.webp" alt="Llanta 2">
+                    <div class="product-info">
+                        <h2 class="product-title">Llanta delanteras</h2>
+                        <p class="product-price">COP $1.100.000 + IVA</p>
+                    </div>
+                </div>
+    
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <img src="https://clinicadellantasyrines.com/cdn/shop/files/pirelli_tr85_principal_1024x1024.png?v=1730697079" alt="Llanta 3">
+                    <div class="product-info">
+                        <h2 class="product-title">Llanta de Alto Rendimiento</h2>
+                        <p class="product-price">$1300.000.000 + IVA</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    
+    <!-- wapp Flotante -->
+    <a href="https://api.whatsapp.com/send?phone=573117241467" target="_blank"><img src="./img/Logo-wapp.png" alt="Logo-wapp" id="flotante"></a>    
+
+    <!-- Pié de Página   -->
     <footer>
-        <p>© 2024 Brave Llantas SAS. Todos los derechos reservados.</p>
+        <div class="grid-container">
+            <!-- Logo -->
+            <div class="item">
+                <img id="Logopp" src="./img/Logo-2.jpg" alt="Logo-pp"> 
+            </div>
+            <!-- Visitanos -->
+            <div class="item">
+                <div id="ppagina">
+                    <h3>&nbsp;Visítanos:</h3>
+                    <img src="./img/globo.png" alt="paginaweb">
+                    &nbsp;&nbsp;&nbsp;
+                    <img src="./img/facebook.png" alt="facebook">
+                    &nbsp;&nbsp;&nbsp;
+                    <img src="./img/instagram.png" alt="instagram">
+                    <br>
+                    <br>
+                    <img src="./img/linkedin.png" alt="linkedin">
+                    &nbsp;&nbsp;&nbsp;
+                    <img src="./img/youtube.png" alt="youtube">
+                    &nbsp;&nbsp;&nbsp;
+                    <img src="./img/whatsapp.png" alt="Wappvisit">
+                </div>
+            </div>
+            <!-- Sitio -->
+            <div class="item">              
+                <div id="sitiopp">
+                    <h3>Sitio:</h3>
+                    <ul>
+                        <a href="index.html">Inicio</a>
+                        <br>
+                        <br>
+                        <a href="nosotros.html">Nosotros</a>
+                        <br>
+                        <br>
+                        <a href="productos.html">Productos</a>
+                        <br>
+                        <br>
+                        <a href="servicios.html">Servicios</a>
+                        <br>
+                        <br>
+                        <a href="contactanos.html">Contáctanos</a>
+                    </ul>
+                </div>
+         </div> 
+        </div>
+    
+        <!-- Pagina Final -->
+        <p class="final-page">&copy; 2024 Brave Llantas SAS. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>

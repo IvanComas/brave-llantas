@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contáctanos | Brave Llantas SAS</title>
+    <title>Nosotros | Brave Llantas SAS</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <!-- ENCABEZADO -->
     <header>
         <nav class="navbar">
@@ -26,29 +25,35 @@
         </nav>
     </header>
 
-    <section>
-        <h2>Contáctanos</h2>
-        <p>¿Tienes preguntas o deseas realizar un pedido? Completa el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+    <!-- Sección Nosotros -->
+    <section id="nosotros">
+        <div class="container-nosostros">
+            <div class="empresa-imagen-nos">
+                <img src="img/Logo-2.jpg" alt="Imagen de la empresa">
+            </div>
 
-        <form onsubmit="return validateForm()">
-            <label for="nombre">Nombre Completo:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+            <!-- Información sobre la empresa -->
+            <div class="empresa-info-nos">
+                <h2>Nosotros</h2>
+                <p>Somos una empresa comprometida con la excelencia, dedicada a ofrecer soluciones innovadoras y de calidad en el ámbito de los servicios. Nuestro equipo de profesionales altamente capacitados trabaja incansablemente para garantizar la satisfacción de nuestros clientes.</p>
 
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" placeholder="Escribe tu correo electrónico" required>
+                <h3>Misión</h3>
+                <p>Brindar productos y servicios de la más alta calidad que contribuyan al bienestar de nuestros clientes y a la mejora continua de nuestros procesos internos, manteniendo siempre un compromiso con el medio ambiente y la comunidad.</p>
 
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono">
-
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
-
-            <button type="submit">Enviar Mensaje</button>
-        </form>
+                <h3>Visión</h3>
+                <p>Ser una empresa líder en nuestro sector, reconocida por su innovación, responsabilidad social y capacidad de adaptarse a los cambios del mercado, consolidándonos como una marca confiable a nivel nacional e internacional.</p>
+            </div>
+            <!-- LOGOS -->
+            <div class="extra-images">
+                <img src="./img/Logo-2.jpg" alt="brave_log2" class="brave_log">
+                <img src="./img/Logo Hanksuki.png" alt="logo-Hanksugi" class="hank_log">
+            </div>
+        </div>
     </section>
 
-    <!-- wapp Flotante -->
-    <a href="https://api.whatsapp.com/send?phone=573117241467" target="_blank"><img src="./img/Logo-wapp.png" alt="Logo-wapp" id="flotante"></a>
+     <!-- wapp Flotante -->
+     <a href="https://api.whatsapp.com/send?phone=573117241467" target="_blank"><img src="./img/Logo-wapp.png" alt="Logo-wapp" id="flotante"></a>
+
 
     <!-- Pié de Página   -->
     <footer>
